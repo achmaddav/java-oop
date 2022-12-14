@@ -25,5 +25,25 @@ public class MainLogicInterface {
         System.out.println("\n\nSample Logic 01 Soal 05");
         LogicInterface logic01Soal05 = new Logic01Soal05Impl(new BasicLogic(9));
         logic01Soal05.cetakArray();
+
+        System.out.println("\n\nSample Logic 01 Soal 06");
+        LogicInterface logic01Soal06 = new Logic01Soal06Impl(new BasicLogic(9));
+        logic01Soal06.cetakArray();
+
+        System.out.println("\n\nSample Logic 01 Soal 07");
+        LogicInterface logic01Soal07 = new Logic01Soal07Impl(new BasicLogic(9));
+        logic01Soal07.cetakArray();
+
+        System.out.println("\n\nSample Logic 01 Soal 08");
+        LogicInterface logic01Soal08 = new Logic01Soal08Impl(new BasicLogic(9));
+        logic01Soal08.cetakArray();
+
+        System.out.println("\n\nSample Logic 01 Soal 9");
+        LogicInterface logic01Soal09 = new Logic01Soal09Impl(new BasicLogic(9));
+        logic01Soal09.cetakArray();
+
+        System.out.println("\n\nSample Logic 01 Soal 10");
+        LogicInterface logic01Soal10 = new Logic01Soal10Impl(new BasicLogic(9));
+        logic01Soal10.cetakArray();
     }
 }
