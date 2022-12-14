@@ -1,21 +1,20 @@
-package logic;
+package logic.logic01;
 
-public class Logic01Soal05 extends BasicLogic {
+import logic.BasicLogic;
 
-    public Logic01Soal05(int n) {
+public class Logic01Soal04 extends BasicLogic {
+    public Logic01Soal04(int n) {
         super(n);
     }
 
     public void isiArray(){
         int N = 1;
         int N1 = 1;
-        int N2 = 1;
         for (int i = 0; i < this.n; i++) {
             this.array[0][i]= String.valueOf(N);
-            int sum = N + N1 + N2;
+            int sum = N + N1;
             N = N1;
-            N1 = N2;
-            N2 = sum;
+            N1 = sum;
         }
     }
 

@@ -1,7 +1,9 @@
-package logic;
+package logic.logic02;
 
-public class Logic02Soal06 extends BasicLogic {
-    public Logic02Soal06(int n) {
+import logic.BasicLogic;
+
+public class Logic02Soal04 extends BasicLogic {
+    public Logic02Soal04(int n) {
         super(n);
     }
 
@@ -12,9 +14,10 @@ public class Logic02Soal06 extends BasicLogic {
                 if (j <= 1) tempArray[j] = 1;
                 else tempArray[j] = tempArray[j - 1] + tempArray[j - 2];
 
-                if (j >= i && j <= n - i - 1
-                        || j <= i && j >= n - i - 1) {
-                    this.array[i][j] = String.valueOf(tempArray[i]);
+                if (j == 0 || i == 0
+                        || j == n - 1 || i == n - 1
+                        || j == n / 2 || i == n / 2) {
+                    this.array[i][j] = String.valueOf(tempArray[j]);
                 }
             }
         }

@@ -1,15 +1,16 @@
-package logic;
+package logic.logic01;
 
-public class Logic01Soal01 extends BasicLogic{
-    public Logic01Soal01(int n) {
+import logic.BasicLogic;
+
+public class Logic01Soal10 extends BasicLogic {
+    public Logic01Soal10(int n) {
         super(n);
     }
 
     public void isiArray(){
-        int angka = 1;
         for (int i = 0; i < this.n; i++) {
+            int angka = (int)Math.pow(i, 3);
             this.array[0][i]= String.valueOf(angka);
-            angka++;
         }
     }
 
@@ -18,3 +19,4 @@ public class Logic01Soal01 extends BasicLogic{
         this.printSingle();
     }
 }
+
